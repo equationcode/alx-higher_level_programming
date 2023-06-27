@@ -9,7 +9,6 @@ class Square:
         "Initialize a new Square.
 
         Args:
-        size (int): The size of the new square.
-        "
+        size (int): The size of the new square"
 
         self_size = size

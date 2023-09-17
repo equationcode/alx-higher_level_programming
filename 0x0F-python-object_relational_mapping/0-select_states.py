@@ -11,12 +11,12 @@ if __name__ == "__main__":
     MY_PASS = sys.argv[2]
     MY_DB = sys.argv[3]
 
-    db = MYSQLdb.connect(
-            host="localhost",
-            user=MY_USER,
-            passwd=MY_PASS,
-            db=MY_DB
-            )
+    db = MySQLdb.connect(
+        host="localhost",
+        user=MY_USER,
+        passwd=MY_PASS,
+        db=MY_DB
+    )
     cur = db.cursor()
     cur.execute("SELECT * FROM states")
     table = cur.fetchall()

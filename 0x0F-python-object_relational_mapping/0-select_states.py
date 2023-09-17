@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-"""Module that lists all states from the database"""
-
+"""lists all states from the database hbtn_0e_0_usa"""
 
 import MySQLdb
 import sys
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
 
     MY_USER = sys.argv[1]
     MY_PASS = sys.argv[2]
@@ -25,5 +24,5 @@ if _name_ == "_main_":
     for row in table:
         print(row)
 
-        cur.close()
-        db.close()
+    cur.close()
+    db.close()
